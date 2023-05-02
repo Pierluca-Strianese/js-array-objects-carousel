@@ -34,10 +34,10 @@ const btnNext = document.querySelector('.btn-next');
 console.log (images.title);
 
 for (let i = 0; i < images.length; i++) {
-	containerHighlighted.innerHTML += `<img src="${images.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
-	containerHighlighted.innerHTML += `<h1> ${images.title} </h1>`;
-	containerHighlighted.innerHTML += `<h3> ${images.text} </h3>`;
-	containerThumbs.innerHTML += `<img src="${images.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
+	containerHighlighted.innerHTML += `<img src="${images[i].image}" alt="" class="${i == 0 ? 'active' : ''}">`;
+	containerHighlighted.innerHTML += `<h1> ${images[i].title} </h1>`;
+	containerHighlighted.innerHTML += `<h3> ${images[i].text} </h3>`;
+	containerThumbs.innerHTML += `<img src="${images[i].image}" alt="" class="${i == 0 ? 'active' : ''}">`;
 }
 
 btnNext.addEventListener('click',
