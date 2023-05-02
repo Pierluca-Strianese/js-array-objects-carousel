@@ -24,8 +24,6 @@ const images = [
 
 const containerHighlighted = document.querySelector('.highlighted');
 const containerThumbs = document.querySelector('.thumbs');
-const title = document.querySelector('.title');
-const text = document.querySelector('.text');
 
 
 const listHighlighted = document.querySelectorAll('.highlighted img');
@@ -37,8 +35,8 @@ console.log (images.title);
 
 for (let i = 0; i < images.length; i++) {
 	containerHighlighted.innerHTML += `<img src="${images.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
-	title.innerHTML += `<h1> ${images.title} </h1>`;
-	text.innerHTML += `<h3> ${images.text} </h3>`;
+	containerHighlighted.innerHTML += `<h1> ${images.title} </h1>`;
+	containerHighlighted.innerHTML += `<h3> ${images.text} </h3>`;
 	containerThumbs.innerHTML += `<img src="${images.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
 }
 
