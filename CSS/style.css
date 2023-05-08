@@ -45,12 +45,24 @@
 	display: block;
 }
 
-.carousel .controls {
+.carousel .controls_up {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	position: absolute;
 	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 2.5rem;
+	z-index: 9;
+}
+
+.carousel .controls_down {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
 	bottom: 15px;
 	left: 50%;
 	transform: translateX(-50%);
